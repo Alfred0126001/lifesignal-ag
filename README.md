@@ -73,3 +73,22 @@ lib/
   - **Data**: Firebase repositories and DTO mapping
 - Use stream providers for real-time Firestore-backed UI (friends status, group safety, activity feed).
 - Keep check-in and escalation logic in domain use-cases to make behavior testable.
+
+## Phase 2: UX & Feature Flows (Approved)
+
+Approved scope for implementation:
+
+- Authentication UX (sign in/sign up/reset password) and profile onboarding.
+- Check-in setup UI (time, grace period, notification preferences).
+- Friends and groups core flows (add/manage contacts, create/manage groups).
+- Activity timeline and status presentation for `SAFE`, `MISSED`, and `ESCALATED`.
+
+## Phase 3: Core Logic & Hardware (Approved)
+
+Approved scope for implementation:
+
+- Check-in core logic and state transitions.
+- Grace period countdown handling after a missed check-in.
+- Background timers/scheduling for check-in windows and escalation triggers.
+- GPS fetching for `lastKnownLocation` and check-in event context.
+- Sensor and voice API integrations for alternative check-in methods.
