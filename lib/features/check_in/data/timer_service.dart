@@ -12,7 +12,7 @@ abstract class TimerService {
   void cancelAll();
 }
 
-class NoopTimerService implements TimerService {
+class StubTimerService implements TimerService {
   @override
   void scheduleCheckInWindow({
     required DateTime scheduledAt,
