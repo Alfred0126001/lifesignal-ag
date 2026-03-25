@@ -92,3 +92,11 @@ Approved scope for implementation:
 - Background timers/scheduling for check-in windows and escalation triggers.
 - GPS fetching for `lastKnownLocation` and check-in event context.
 - Sensor and voice API integrations for alternative check-in methods.
+
+### Phase 3 scaffolding started
+
+- `lib/features/check_in/domain/check_in_state_machine.dart`
+- `lib/features/check_in/data/timer_service.dart`
+- `lib/features/check_in/data/gps_provider.dart`
+- `lib/features/check_in/data/sensor_check_in_adapter.dart`
+- `lib/features/check_in/data/voice_check_in_adapter.dart`
