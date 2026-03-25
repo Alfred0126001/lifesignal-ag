@@ -13,6 +13,8 @@ abstract class TimerService {
 }
 
 class StubTimerService implements TimerService {
+  const StubTimerService();
+
   @override
   void scheduleCheckInWindow({
     required DateTime scheduledAt,

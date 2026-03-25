@@ -29,8 +29,8 @@ class CheckInStateMachine {
         if (event == CheckInEvent.checkInSucceeded) {
           return CheckInStatus.safe;
         }
-        if (event == CheckInEvent.gracePeriodExpired) {
-          return CheckInStatus.escalated;
+        if (event == CheckInEvent.checkInMissed) {
+          return CheckInStatus.gracePeriod;
         }
         return CheckInStatus.missed;
       case CheckInStatus.gracePeriod:
