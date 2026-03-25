@@ -21,14 +21,16 @@ class StubGroupsRepository implements GroupsRepository {
     required String name,
     required List<String> memberIds,
   }) async {
+    final now = DateTime.now().toIso8601String();
+
     await _databaseClient.setDocument(
       path: 'groups/$groupId',
       data: {
         'ownerId': ownerId,
         'name': name,
         'memberIds': memberIds,
-        'createdAt': DateTime.now().toIso8601String(),
-        'updatedAt': DateTime.now().toIso8601String(),
+        'createdAt': now,
+        'updatedAt': now,
       },
     );
   }

@@ -17,12 +17,14 @@ class StubFriendsRepository implements FriendsRepository {
     required String userId,
     required String friendUserId,
   }) async {
+    final now = DateTime.now().toIso8601String();
+
     await _databaseClient.setDocument(
       path: 'users/$userId/friends/$friendUserId',
       data: {
         'status': 'PENDING',
-        'createdAt': DateTime.now().toIso8601String(),
-        'updatedAt': DateTime.now().toIso8601String(),
+        'createdAt': now,
+        'updatedAt': now,
       },
     );
   }
