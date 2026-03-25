@@ -100,3 +100,21 @@ Approved scope for implementation:
 - `lib/features/check_in/data/gps_provider.dart`
 - `lib/features/check_in/data/sensor_check_in_adapter.dart`
 - `lib/features/check_in/data/voice_check_in_adapter.dart`
+
+## Phase 4: Backend & Networking (Approved)
+
+Approved scope for implementation:
+
+- Connect UI flows to live database-backed services.
+- Implement authentication wiring for sign-in/sign-up/sign-out.
+- Implement friends networking flow for adding friends.
+- Implement groups networking flow for creating groups.
+- Implement cloud functions that trigger SMS alerts for escalations.
+
+### Phase 4 scaffolding started
+
+- `lib/core/network/live_database_client.dart`
+- `lib/features/auth/data/auth_service.dart`
+- `lib/features/friends/data/friends_repository.dart`
+- `lib/features/groups/data/groups_repository.dart`
+- `functions/src/sms_alerts.dart`
