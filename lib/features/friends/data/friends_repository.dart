@@ -21,6 +21,8 @@ class StubFriendsRepository implements FriendsRepository {
       path: 'users/$userId/friends/$friendUserId',
       data: {
         'status': 'PENDING',
+        'createdAt': DateTime.now().toIso8601String(),
+        'updatedAt': DateTime.now().toIso8601String(),
       },
     );
   }

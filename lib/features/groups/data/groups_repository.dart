@@ -27,6 +27,8 @@ class StubGroupsRepository implements GroupsRepository {
         'ownerId': ownerId,
         'name': name,
         'memberIds': memberIds,
+        'createdAt': DateTime.now().toIso8601String(),
+        'updatedAt': DateTime.now().toIso8601String(),
       },
     );
   }
